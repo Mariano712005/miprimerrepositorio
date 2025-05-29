@@ -1,0 +1,200 @@
+Programación Estructurada
+Esta forma de programar (paradigma) se basa en un famoso teorema,
+desarrollado por Edsger Dikjstra, que demuestra que todo programa puede
+escribirse utilizando únicamente las tres estructuras básicas de control:
+ Secuencia: el bloque secuencial de instrucciones, ejecutadas
+sucesivamente, una detrás de otra.
+ Selección: la instrucción condicional con doble alternativa, de la forma
+“if condición then instrucción-1 else instrucción 2”.
+ Iteración: el bucle condicional “while condición do instrucción”, que
+ejecuta la instrucción repetidamente mientras la condición se cumpla.
+
+Sentencias de Control
+Las sentencias de control permiten controlar el flujo del programa, tomando
+decisiones a partir de comparaciones.
+ Se usan instrucciones condicionales y de ciclos.
+ Un condicional es un conjunto de sentencias que pueden o no ejecutarse,
+dependiendo del resultado de una condición.
+ Un ciclo es un conjunto de sentencias que son ejecutadas varias veces, hasta
+que una condición de término es satisfecha.
+ Tanto los condicionales como los ciclos contienen a otras sentencias. Para indicar
+esta relación ,las sentencias contenidas no se escriben en la misma columna que
+la sentencia de control,sino un poco más a la derecha
+Las instrucciones condicionalesson:
+IF
+SWITCH
+Las instrucciones de ciclo son:
+WHILE
+FOR
+REPEAT
+
+Operadores Relacionales
+Se usan para expresar condiciones y describir
+una relación entre dos valores
+if (a == b) printf ("Son iguales");
+OPERADOR DESCRIPCIÓN
+BINARIOS
+> Mayor que
+>= Mayor o igual que
+< Menor que
+<= Menor o igual que
+== Igual que
+!= Diferente que
+
+Sentencia If Simple en C
+La estructura if adopta una de las dos formas siguientes:
+if (condición)sentencia;
+en donde condición es una sentencia que se evalúa como verdadera
+(Ejemplo If simple)
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+int num;
+printf ("Ingrese un número entero por teclado: ");
+scanf ("%d", &num);
+// ejemplo de IF
+if (num > 0) printf (" %d es POSITIVO",num);
+getch();
+return 0;
+}
+
+Sentencia If Doble en C
+if (condición)sentencia1;
+else sentencia2;
+en donde expresión es una sentencia que se evalúa como verdadera (devuelve
+un valor no nulo) o falsa (devuelve cero). La palabra sentencia puede ser
+una sentencia simple terminada con un punto y coma, o un grupo de
+sentencias encerradas entre llaves {}.
+(Ejemplo If con Else)
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+int num;
+printf ("Ingrese un número entero por teclado: ");
+scanf ("%d", &num);
+// ejemplo de IF
+if (num > 0) printf (" %d es POSITIVO",num);
+else printf ("%d es negativo o igual a cero\n",num);
+getch();
+return 0;
+}
+
+#include <stdio.h>
+#include <conio.h>
+int main ()
+{
+int n;
+printf ("Teclee un número entero: ");
+scanf ("%d", &n);
+// ejemplo de IF anidado simple
+if (n % 3== 0) printf (" %d es divisible por 3 \n",n);
+else printf ("%d No es múltiplo de 3 \n",n);
+getch();
+return 0;
+}
+
+#include <stdio.h>
+#include <conio.h>
+int main ()
+{
+char car;
+printf ("Teclee un caractero:\n ");
+scanf ("%c", &car);
+// ejemplo de IF anidado
+if (car == 'a') printf (" Se ingreso la letra a \n");
+else printf ("Se ingreso el carácter %c \n",car);
+getch();
+return 0;
+}
+
+Ejercicio:
+Verificar si el siguiente código cumple con el enunciado. Si no cumple con el
+enunciado realizar las modificaciones que considere necesarias.
+Enunciado: El programa lee un numero entero y lo transforma en el impar
+inmediatamente mayor, si es que no era ya impar.
+int main ()
+{
+int a;
+scanf("%d", &a);
+if (a % 2 == 0) /* Comprobar si a es par. */
+a = a + 1;
+printf( "Ahora es impar: %d n", a );
+return 0;
+}
+
+(Eejemplo If con más de una acción por condición)
+#include <stdio.h>
+#include <conio.h>
+int main ()
+{
+int num,m ;
+m=0;
+printf ("Teclee un numero: ");
+scanf ("%d", &num);
+if (num <= 10)
+{
+m= 2*num;
+printf (" El duplo de %d es %d", num,m);
+}
+else
+{
+m=3*num;
+printf ("El triplo de %d es %d \n", num,m);
+}
+getch();
+return 0;
+}
+
+(Ejemplo if con más de una condición combinada)
+#include <stdio.h>
+#include <conio.h>
+int main ()
+{
+int num,m ;
+m=0;
+printf ("Teclee un numero: ");
+scanf ("%d", &num);
+if ( num >= 0 && num <= 10)
+{
+m= 2*num;
+printf (" El duplo de %d es %d", num,m);
+}
+else
+printf ("No realizar ninguna operacion \n");
+getch();
+return 0;
+}
+
+Sentencia if anidado en C 
+ Es posible utilizar las instrucciones IF-ELSE anidadas, es decir, que alguna
+de las ramas sea a su vez otra instrucción IF-ELSE.
+ Permite implementar decisiones que implican más de dos alternativas
+
+(Ejemplo if anidado)
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+int num;
+printf ("Ingrese un número entero por teclado: ");
+scanf ("%d", &num);
+// ejemplo de IF
+if (num > 0) printf (" %d es POSITIVO",num);
+else
+if (num == 0) printf ("Es igual a cero\n");
+else printf ("%d es negativo \n",num);
+getch();
+return 0;
+}
+
+Operadores Lógicos
+Actúan sobre expresiones booleanas, es decir, sobre valores verdadero o
+falso generados por expresiones como las explicadas en el caso
+anterior.
+OPERADOR DESCRIPCIÓN
+UNARIOS ! not
+BINARIOS
+&& and
+|| or
