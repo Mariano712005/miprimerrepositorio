@@ -101,3 +101,125 @@ printf ("\nLongitud de la cadena: %d\n", longitud);
 getch();
 return 0;
 }
+
+Cadenas o Strings
+Las cadenas están definidas como una secuencia de caracteres.
+Una cadena es un conjunto de caracteres, o valores de tipo
+char, terminados con el carácter nulo, es decir el valor
+numérico 0.
+Internamente, en el ordenador, se almacenan en posiciones consecutivas de
+memoria
+
+Declaración de una cadena o string
+Cuando se declara un arreglo de caracteres se debe considerar un
+carácter adicional a la cadena más larga que se vaya a guardar. Por
+ejemplo, si se quiere declarar un arreglo cadena que guarde una
+cadena de diez caracteres, se hará como:
+char <identificador> [<longitud máxima>];
+char cadena[11];
+La terminación de la cadena se debe indicar con nulo. Un nulo se
+especifica como '\0'.
+Se pueden hacer también inicializaciones de arreglos de caracteres en
+donde automáticamente C asigna el caracter nulo al final de la cadena, de la
+siguiente forma:
+char nombre_arr[ tam ]="cadena";
+Por ejemplo, el siguiente fragmento inicializa cadena con ``hola'':
+char cadena[5]="hola"; El código anterior es equivalente a:
+char cadena[5]={'h','o','l','a','\0'};
+char cadena[5];
+cadena[0]= ´h´
+;
+cadena[1]= ‘o‘;
+cadena[2]= ‘l‘;
+cadena[3]= ‘a‘;
+cadena[4]= ‘\0‘;
+
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+char cadena[5]={'h','o','l','a','\0'};
+int i;
+printf("La cadena es:\n ");
+i=0;
+while (i< 5)
+{
+printf("carácter %d:%c\n",i,cadena[i]);
+i++;
+}
+getch();
+return 0;
+}
+
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+char nombre[10], apellidos[10];
+printf("Introduce tu nombre: ");
+scanf("%s",&nombre);
+printf("Introduce tus apellidos: ");
+scanf("%s",&apellidos);
+printf("Usted es %s %s\n",nombre,apellidos);
+getch();
+return 0;
+}
+
+Operaciones con cadena o string
+•Cargar una cadena.
+•Recorrer una cadena.
+•Buscar un carácter en particular.
+•Acceder a un carácter en una posición determinada.
+•Acceder a una posición determinada y mostrarsu contenido.
+•Insertar un nuevo carácter.
+•Eliminar un carácter.
+•Cargar una cadena.
+•Recorrer una cadena
+
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+int main()
+{
+char palabra[50];
+int i=0;
+/*Cargamos la Cadena*/
+printf("Ingrese Palabra: \n");
+scanf("%s",&palabra);
+/* Recorremos la cadena y la mostramos en columna*/
+while(palabra[i]!='\0')
+{
+printf("\n");
+printf("%c",palabra[i]);
+i++;
+}
+getch();
+return 0;
+}
+
+#include <stdio.h>
+#include <conio.h>
+# define pos 5
+int main()
+{
+int i;
+char car,nom[pos];
+i=0;
+/* cargar una cadena caracter a caracter*/
+while (i <pos)
+{
+printf ("Ingrese caracter:%d\n",i+1);
+scanf("%c\n",&car);
+nom[i]=car;
+i++;
+}
+i=0;
+/* mostrar una cadena caracter a caracter*/
+while (i < pos)
+{
+printf (" caracter:%c\n",nom[i]);
+i++;
+}
+getch();
+return 0;
+}
