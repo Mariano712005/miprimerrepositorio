@@ -1,0 +1,110 @@
+Estructura De Datos
+Una estructura de datos es una forma de organizar y
+almacenar datos de manera que puedan ser utilizados
+eficientemente
+Esta "disposición" permite que una estructura de datos sea eficiente en
+algunas operaciones e ineficiente en otras.
+Las estructuras de datos son aquellas que permiten organizar la información
+de manera eficiente, y en definitiva diseñar la solución correcta para un
+determinado problema.
+
+Las ESTRUCTURAS DE DATOS ESTÁTICAS son aquellas en las que
+el tamaño ocupado en memoria se define antes de que el programa se
+ejecute y no puede modificarse dicho tamaño durante la ejecución del
+programa, mientras que una ESTRUCTURA DE DATOS
+DINÁMICA es aquella en la que el tamaño ocupado en memoria
+puede modificarse durante la ejecución del programa.
+
+ARREGLOS
+Un arreglo se define como una colección finita, homogénea y ordenada de
+elementos de un mismo tipo.
+
+STRINGS
+Una cadena de caracteres es una secuencia ordenada de longitud finita de
+elementos que pertenecen a un cierto lenguaje formal o alfabeto análogas a
+una fórmula o a una oración.
+En general, una cadena de caracteres es una sucesión
+de caracteres (letras, números u otros signos o símbolos).
+Si no se ponen restricciones al alfabeto, una cadena podrá estar formada por
+cualquier combinación finita de los caracteres disponibles (las letras de la 'a' a la
+'z' y de la 'A' a la 'Z', los números del '0' al '9', el espacio en blanco ' ', símbolos
+diversos '!', '@', '%', etcétera)
+
+ARCHIVO O FICHERO
+Un fichero o archivo es una colección ordenada de datos que tienen entre sí
+una relación y que se almacenan de forma permanente en un dispositivo de
+memoria no volátil.
+En este contexto, permanente quiere decir que, salvo fallos catastróficos o hasta
+que sean borrados a propósito, estos datos permanecen en el medio en que se
+almacenan y continúan existiendo después de que el programa que los creó deja
+de ejecutarse, incluso después de apagar el ordenador.
+Esto marca la diferencia con los datos que son provisionalmente almacenados en
+la memoria RAM, la memoria volátil del ordenador, que no sobreviven al
+programa que los crea y mucho menos a la desconexión del computador.
+
+ESTRUCTURA DE DATOS LINEALES
+Las estructuras de datos lineales son aquellas en las que los elementos
+ocupan lugares sucesivos en la estructura y cada uno de ellos tiene un único
+sucesor y un único predecesor, es decir, sus elementos están ubicados uno al
+lado del otro relacionados en forma lineal.
+Hay tres tipos de estructuras de datos lineales:
+•Listas enlazadas
+•Pilas
+•Colas
+
+LISTAS ENLAZADAS
+Las listas enlazadas se construyen con elementos que están ubicados en una
+secuencia. Es decir que cada elemento se conecta con el siguiente a través de un
+enlace que contiene la posición del siguiente elemento. De este modo, teniendo
+la referencia del principio de la lista se puede acceder a todos los elementos de la
+misma.
+
+PILA
+La PILA es un tipo especial de lista lineal dentro de las estructuras de datos
+dinámicas que permite almacenar y recuperar datos, siendo el modo de acceso
+a sus elementos de tipo LIFO (del inglés Last In, First Out, es decir, último en
+entrar, primero en salir).
+¿Cómo funciona?
+A través de dos operaciones básicas: apilar
+(push), que coloca un objeto en la pila, y su
+operación inversa, desapilar (pop), que retira
+el último elemento apilado.
+
+COLA
+La COLS es un tipo especial de lista lineal dentro de las estructuras de datos
+dinámicas que permite almacenar y recuperar datos, siendo el modo de acceso
+a sus elementos de tipo FIFO (del inglés First In, First Out, es decir, primero en
+entrar, primero en salir).
+¿Cómo funciona?
+A través de dos operaciones
+básicas: encolar que coloca un
+objeto en la cola y su operación
+inversa, desencolar que retira el
+primer elemento encoladp.
+
+ESTRUCTURA DE DATOS NO LINEALES
+Las estructuras de datos no lineales, también llamadas multienlazadas,
+son aquellas en las que cada elemento puede estar enlazado a cualquier
+otro componente. Es decir, cada elemento puede tener varios sucesores o
+varios predecesores.
+Existen dos tipos:
+•Árboles
+•Grafos
+
+ARBOLES
+En estructura de datos, los árboles consisten en una estructura no lineal que se
+utiliza para representar datos con una relación jerárquica en la que cada
+elemento tiene un único antecesor y puede tener varios sucesores.
+Los mismos se encuentran clasificados en: árbol general, un árbol donde cada
+elemento puede tener un número ilimitado de sub árboles y árboles binarios,
+que son una estructura de datos homogénea,
+dinámica y no lineal en donde a cada elemento
+le pueden seguir como máximo dos nodos.
+
+GRAFOS
+Otro tipo de no lineal de estructura de datos en programación, son los grafos.
+Se trata de una estructura matemática formada por un conjunto de puntos —
+una estructura de datos— y un conjunto de líneas, cada una de las cuales une
+un punto a otro.
+Los puntos se llaman nodos o vértices del grafo y las líneas se llaman aristas o
+arcos
