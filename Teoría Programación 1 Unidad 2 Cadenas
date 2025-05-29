@@ -1,0 +1,103 @@
+Funciones relacionadas con Strings
+Librería String .h
+strcpy() copia dos strings;
+strcat() agrega una cadena a otra;
+strcmp() compara una cadena con otra;
+strchcr() localiza primera instancia de un caracter
+dentro de un string;
+strstr() localiza la primera ocurrencia de un
+string dentro de otro;
+strlen() determina la longitud de un string.
+isalnum(caracter): devuelve cierto (un entero cualquiera distinto de cero) si caracter es
+una letra o dígito, y falso (el valor entero 0) en caso contrario.
+isalpha(caracter): devuelve cierto si caracter es una letra, y falso en caso contrario.
+isblank(caracter): devuelve cierto si caracter es un espacio en blanco o un tabulador.
+isdigit(caracter) devuelve cierto si caracter es un digito, y falso en caso contrario.
+isspace(caracter): devuelve cierto si caracter es un espacio en blanco, un salto de línea, un
+retorno de carro, un tabulador, etc., y falso en caso contrario.
+islower(caracter): devuelve cierto si caracter es una letra minúscula, y falso en caso
+contrario.
+isupper(caracter): devuelve cierto si caracter es una letra mayúscula, y falso en caso
+contrario.
+toupper(caracter): devuelve la mayúscula asociada a caracter, si la tiene; si no, devuelve el
+mismo caracter
+tolower(caracter): devuelve la minúscula asociada a caracter, si la tiene; si no, devuelve el mismo
+caracter.
+isalnum(caracter): devuelve cierto (un entero cualquiera distinto de cero) si caracter es una letra
+o dígito, y falso (el valor entero 0) en caso contrario.
+isalpha(caracter): devuelve cierto si caracter es una letra, y falso en caso contrario.
+isblank(caracter): devuelve cierto si caracter es un espacio en blanco o un tabulador.
+isdigit(caracter) devuelve cierto si caracter es un digito, y falso en caso contrario.
+isspace(caracter): devuelve cierto si caracter es un espacio en blanco, un salto de línea, un
+retorno de carro, un tabulador, etc., y falso en caso contrario.
+islower(caracter): devuelve cierto si caracter es una letra minúscula, y falso en caso contrario.
+isupper(caracter): devuelve cierto si caracter es una letra mayúscula, y falso en caso contrario.
+toupper(caracter): devuelve la mayúscula asociada a caracter,si la tiene; si no, devuelve el
+mismo caracter.
+tolower(caracter): devuelve la minúscula asociada a caracter, si la tiene; si no, devuelve el mismo
+caracter
+
+strcat
+Concatenar la cadena2 al final de la cadena1.
+Se declara de la siguiente manera:
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+char texto1[]="Don Pepito";
+char texto2[]=" y ";
+char texto3[]="Don Jose";
+printf("%s\n",texto1);
+strcat(texto1,texto2);
+printf("%s\n",texto2);
+strcat(texto1,texto3);
+printf("%s\n",texto1);
+getchar();
+return 0;
+}
+
+strcpy
+Se utiliza para copiar una cadena de caracteres (fuente) en el lugar
+que ocupaba otra (destino). Esta copia es destructiva, o sea, que
+todos los caracteres que estaban en la cadena destino desaparecen,
+aunque la cadena destino fuera más larga que la cadena fuente .La
+cadena destino se pone como primer argumento de la función y la
+cadena fuente como segundo.
+Copia el contenido de cadena2 en cadena1. cadena2 puede ser una
+variable o una cadena directa (por ejemplo "hola"). Debemos tener
+cuidado de que la cadena destino (cadena1) tenga espacio suficiente
+para albergar a la cadena origen (cadena). 2
+strcpy
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+char texto1[]="corta";
+char texto2[]="mediana";
+char texto3[]="larguisima";
+strcpy(texto2,texto1);
+printf("%s\n",texto2);
+strcpy(texto2,texto3);
+printf("%s\n",texto2);
+getch();
+return 0;
+}
+
+strlen
+Esta función nos devuelve el número de caracteres que tiene la cadena (sin
+contar el '\0').
+#include <stdio.h>
+#include <string.h>
+#include <conio.h>
+#define MAXLON 80
+int main()
+{
+char a[MAXLON+1];
+int longitud;
+printf ("Introduce una cadena (max. %d caracteres): ",
+MAXLON); scanf("%s",&a);
+longitud = strlen(a);
+printf ("\nLongitud de la cadena: %d\n", longitud);
+getch();
+return 0;
+}
