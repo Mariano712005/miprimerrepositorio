@@ -1,0 +1,134 @@
+Sentencia Switch
+La sentencia switch() en Lenguaje C es
+una sentencia de selección. Esta
+sentencia permite seleccionar las
+acciones a realizar de acuerdo al valor
+que tome una variable.
+Se puede programar con un grupo de sentencias if then else anidadas, aunque ello puede
+ser de complicada lectura. Para evitarlo se puede usar la sentencia switch.
+Su utilización es:
+switch (valor)
+{
+case valor1: <sentencias>
+case valor2: <sentencias>
+...
+default: <sentencias>
+}
+En la sentencia switch se comprueba el valor que ingrese el usuario que es el que tomará la variable
+expresión y lo compara con algunas de las etiquetas que acompañen a cada case. En caso de no
+encontrar ninguna coincidencia, el valor lo tomará como default.
+Permiten comparar una
+'variable' con distintos
+valores posibles, ejecutando
+para cada caso una serie de
+instrucciones específicas.
+
+IMPORTANCIA DE BREAK
+Cuando el control del programa llega a una sentencia switch y se evalúa la expresión
+de control de la misma, el programa comienza a ejecutar las sentencias presentes en
+el bloque correspondiente a alguna cláusula case, o quizá a la claúsula default.
+¿Qué sucede después de ejecutar la última sentencia del bloque? Si el bloque es el
+último, el programa ejecuta la sentencia inmediatamente siguiente al switch. Pero si
+no es el último, el programa ejecuta la primera sentencia inmediatamente siguiente
+al bloque. Y luego la siguiente, y la siguente, etc. La sentencia break, sirve para hacer
+que el programa abandone la sentencia switch. Si no se encuentra un break, se
+ejecuta el siguiente bloque de código, y así hasta hallar un break o salir de la
+sentencia switch.
+Dicho de otro modo, las cláusulas case son puntos de entrada al conjunto de líneas
+de código que hay en el interior del switch. Las sentencias break son puntos de
+salida, y debemos organizar cuidadosamente ambas cosas para evitar errores que
+no podrá detectar el compilador.
+
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+int num;
+printf( "Introduce un número " );
+scanf( "%i", &num );
+if ( num==1 ) printf ( "Es un 1\n" );
+else if ( num==2 ) printf ( "Es un 2\n" );
+else if ( num==3 ) printf ( "Es un 3\n" );
+else printf ( "No era ni 1, ni 2, ni 3\n" );
+getch();
+return 0;
+}
+
+La sentencia break provoca la salida
+de switch.
+En caso contrario continua la
+siguiente secuencia case o default
+aunque no se cumpla la condición.
+
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+int num;
+printf( "Introduce un número " );
+scanf( "%d", &num );
+switch( num )
+{
+case 1: printf( "Es un 1\n" ); break;
+case 2: printf( "Es un 2\n" ); break;
+case 3: printf( "Es un 3\n" ); break;
+default: printf( "No es ni 1, ni 2, ni 3\n" ) break;
+}
+getch();
+return 0;
+}
+
+#include <stdio.h>
+#include <conio.h>
+int main() /* Escribe el día de la semana */
+{
+int dia;
+printf("Introduce el día: ");
+scanf("%d",&dia);
+switch(dia)
+{
+case 1: printf ("Lunes"); break;
+case 2: printf ("Martes"); break;
+case 3: printf ("Miércoles"); break;
+case 4: printf ("Jueves"); break;
+case 5: printf ("Viernes"); break;
+case 6: printf ("Sábado"); break;
+case 7: printf ("Domingo"); break;
+default: printf (“No corresponde a ningun dia de la semana\n");break;
+}
+return 0;
+getch();
+}
+
+Resumen:
+La estructura switch es especialmente útil cuando la selección se basa en el
+valor de una variable simple o de una expresión simple denominada expresión
+de control o selector.
+Los valores de cada case del switch han de ser constantes.
+El valor de esta expresión puede ser de tipo int o char, pero no pude ser del
+tipo float ni double.
+La etiqueta default marca el bloque de código que se ejecuta por defecto
+(cuando al evaluar la expresión se obtiene un valor no especificado por los
+casos anteriores del switch).
+La sentencia SWITCH compara solamente igualdad.
+Por cada CASE puede haber 1 o más instrucciones.
+
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+char car;
+printf("Ingrese un caracter");
+scanf ("%c",&car);
+switch(car)
+{
+case 'a': printf (" Vocal a");break;
+case 'e': printf (" Vocal e");break;
+case 'i': printf (" Vocal i");break;
+case 'o': printf (" Vocal o");break;
+case 'u': printf (" Vocal u");break;
+default: printf("No es vocal");break;
+}
+return 0;
+getch();
+}
