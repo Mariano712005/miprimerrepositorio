@@ -1,0 +1,63 @@
+Concepto de Matriz
+Es posible manejar arrays de más de una dimensión, denominados en general matrices. 
+Cada dimensión esta representada por un subíndice de la matriz. 
+Por tanto, una matriz bidimensional tiene dos subíndices; una matriz tridimensional tiene tres índices, y así sucesivamente. 
+Una matriz puede calcular cualquier número de dimensiones, aunque las matrices más utilizadas son de dos dimensiones. 
+
+Una matriz de dos dimensiones de tipo entera se define de la siguiente
+manera:
+int Matriz i j
+i: maneja las filas de la matriz
+j: maneja las columnas de la matriz
+
+Forma de inicializar una matriz es la siguiente:
+tipo nombre_matriz[ Tamañofilas] [ TamañoColumnas] = {lista-valores};
+Ejemplo:
+int x[2] [3] ={3,5,7,-2,0,1}
+
+La matriz anterior se puede inicializar de la siguiente manera:
+int matriz1[5][3] = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 };
+Para mayor claridad, se pueden agrupar los valores entre llaves. Por ejemplo,
+int matriz1[5] [3] = { {1,2,3},
+(4,5,6),
+(7,8,9),
+{10,11,12},
+{13,14,15} };
+El compilador ignora las llaves interiores, que hacen más sencillo comprender cómo se distribuyen los valores. 
+Cada valor debe separarse con una coma, independientemente de que se utilicen Ilaves o no. 
+La inicialización completa si que debe encerrarse entre llaves, y debe finalizar con punto y coma.
+
+1: #include <stdio.h>
+2: int main()
+3: {
+4: int i, j;
+5: int matriz[5][2] = { {0,0}, {1,2}, {2,4}, {3,6}, {4,8}};
+6:
+7: for (i = 0; i<5; i++)
+8: }
+9:
+10: {
+11:
+12:
+for (j=0; j<2; j++)
+printf("matriz [%d] [%d] = ", i, j);
+printf("%d \t", matriz[i] [j]);
+13:
+14: printf("\n");
+15: }
+16:
+17: return 0;
+18:}
+
+Salida del programa
+matriz[0] [0] 이 matriz [0] [1] =
+이
+matriz [1] [0[ B
+1 matriz[1][1] =
+2
+matriz[2] [0] 2 matriz[2] [1] = 4
+matriz[3] [0] =3 matriz[3] [1] =
+6
+matriz[4] [0] = 4 matriz [4] [1] = 8
+
+
