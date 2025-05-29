@@ -1,0 +1,328 @@
+UNIDAD 1
+Definición de Proceso. Acciones y Estados.
+Representación de Estados. Variables y Constantes.
+Definición de Algoritmo. Definición de Programa.
+Lenguajes y Paradigmas. El paradigma Imperativo.
+Buenas prácticas de programación. Estructura de un
+programa en C. Operaciones básicas de salida.
+
+Concepto de Programación
+El programador se encarga de escribir, probar, depurar y mantener el
+código fuente.
+La programación se realiza mediante el uso de algoritmos, que son
+secuencias finitas, ordenadas y no ambiguas de instrucciones que
+deben seguirse para resolver un problema.
+Consiste en la elaboración de programas para la resolución
+de problemas mediante computadoras.
+
+Concepto de Problema
+Un problema es un determinado asunto o una cuestión que requiere de una
+solución.
+Un problema se caracteriza por una brecha entre la situación actual y la situación
+deseada, y la resolución de este brecha es el objetivo principal.
+La definición de un problema es un paso crucial en cualquier proceso de
+resolución de problemas, ya que sienta las bases para la identificación de
+soluciones y la toma de decisiones informadas.
+Al comprender y definir claramente un problema, se mejora la capacidad para
+desarrollar estrategias efectivas y tomar medidas que conduzcan a una
+resolución exitosa.
+
+Pasos para resolver un Problema
+1.Identificación del problema: En este paso, se reconoce y
+delimita claramente cuál es la situación o desafío que se
+considera un problema. Esto implica definir los límites del
+problema y establecer los elementos clave involucrados.
+2.Descripción y análisis: Se procede a describir y analizar
+detalladamente el problema. Esto puede incluir identificar las
+causas subyacentes, comprender los factores que contribuyen al
+problema y evaluar su impacto en el entorno o las personas
+afectadas.
+3.Formulación del problema: Durante este proceso, se articula
+de manera precisa cuál es el problema. Esto implica expresar de
+manera clara y específica cuál es la brecha entre la situación
+actual y la situación deseada
+4.Establecimiento de objetivos: Se definen los objetivos o metas que se
+desean alcanzar al resolver el problema. Estos objetivos deben ser medibles y
+proporcionarán una base para evaluar el éxito de las soluciones propuestas.
+5.Contextualización: Se considera el contexto más amplio en el que se
+encuentra el problema. Esto implica entender las relaciones con otros
+elementos, identificar posibles restricciones y evaluar cómo el problema se
+relaciona con factores externos.
+6.Delimitación de variables: En algunos casos, es importante definir las
+variables o elementos específicos que están directamente relacionados con el
+problema. Esto ayuda a enfocar el análisis y la búsqueda de soluciones.
+
+ANÁLISIS DEL PROBLEMA
+El análisis consiste en estudiar el problema planteado para obtener una idea
+clara y concisa de los pasos necesarios para proponer un modelo para su
+solución
+Nuestra función en esta etapa consiste precisamente en describir el modelo que
+mejor se adapte a la estructura del problema que estemos observando.
+Es decir, después de analizar el problema, se han de conocer claramente tres
+cosas.
+• ● Datos de Entrada de que se dispone
+• ● Proceso o Tratamiento que ha de realizarse con estos datos.
+• ● Información de salida deseada.
+
+ANÁLISIS DEL PROBLEMA
+Una de las técnicas mas empleadas recibe el nombre de H.I.P.O.
+(Hierarchy the plus input process output) que consiste en
+esquematizar cada programa, o una parte del mismo en los
+siguientes tres bloques:
+Entrada → proceso → salida
+Consigna
+Sin entrar en el campo de la informática, para hacer la nómina de
+los mejores alumnos de una carrera, se necesita saber:
+ENTRADA:
+PROCESO:
+SALIDA:
+SOLUCION CONSIGNA_
+Sin entrar en el campo de la informática, para hacer la nómina
+de los mejores alumnos de una carrera, se necesita saber:
+ENTRADA: Los datos de cada uno de los alumnos y si estos datos
+están en papel o en un fichero donde está toda la información
+de los alumnos.
+PROCESO: La fórmula matemática para calcular el promedio de
+notas es: (nota 1 + nota 2 + nota 3 + .....+ nota n) / cantidad de
+notas.
+SALIDA: El modelo del informe donde se desean imprimir el
+promedio de los alumnos.
+
+Resolución de Problema mediante
+lenguaje de computadora
+La resolución de un problema mediante una computadora
+consiste en el proceso que a partir de la descripción de un
+problema, expresado habitualmente en lenguaje natural y en
+términos propios del dominio del problema, permite
+desarrollar un PROGRAMA que resuelva dicho problema
+usando un LENGUAJE DE PROGRAMACIÓN.
+
+Concepto de Programa
+Un Programa de computadora, es una colección de
+instrucciones que, al ser ejecutadas por el CPU de una
+máquina, llevan a cabo una tarea o función específica.
+
+Concepto de Lenguaje de Programación
+Es un conjunto de reglas y convenciones utilizadas para escribir
+programas informáticos, que son conjuntos de instrucciones que
+una computadora puede ejecutar.
+Estos lenguajes permiten a los programadores comunicarse con
+las computadoras, dando instrucciones precisas sobre cómo
+realizar tareas específicas.
+
+Tipos de Lenguaje de Programación
+Se pueden utilizar muchos lenguajes para programar una computadora.
+LENGUAJE DE BAJO NIVEL:
+Consiste el una colección de instrucciones que controlan el hardware de la
+computadora.
+Es el más básico. fueron los primeros que surgieron y se llaman así porque están directamente
+relacionados con el hardware del computador Dependen totalmente de la
+máquina y no se pueden utilizar en otras máquinas
+• Estos lenguajes son los que ordenan a la máquina operaciones fundamentales para que pueda
+funcionar, por ejemplo la asignación y liberación de memoria, el uso de punteros, la creación
+de tipos de datos, etc.
+El primer lenguaje de este tipo es el Lenguaje de Máquina.
+• Lenguaje de Máquina: Consiste en una serie de instrucciones en binario
+(ceros y unos).
+• Este lenguaje es muy complicado y la posibilidad de cometer errores es
+muy alta, para resolver esta dificultad surgió el Lenguaje Ensamblador.
+• Lenguaje Ensamblador: Consiste en asignar una abreviatura a cada
+instrucción en binario de tal forma que sea más fácil recordarla y más difícil
+equivocarse. Continua siendo necesario conocer el hardware de la
+computadora.
+LENGUAJES DE ALTO NIVEL:
+• Las instrucciones que utilizan son más compatibles con los lenguajes y la forma de
+pensar humanos.
+• La mayoría son lenguajes de propósito general, como C, Pascal, Java, PHP,etc.
+• No dependen de la máquina y sirven fundamentalmente para crear programas
+informáticos que solucionan diferentes problemas.
+• Son los más usados por los programadores y por todo del mundo que realiza
+programas informáticos.
+• Pero aunque el programador de esta forma se distancie del hardware del
+computador, este sigue trabajando en lenguaje máquina. Por ello se hace necesaria
+una traducción a una secuencia de instrucciones interpretables por el computador.
+Esta labor es llevada a cabo por los compiladores y los intérpretes.
+COMPILADORES
+Son aquellos cuya función es traducir un programa escrito en un
+determinado lenguaje a un idioma que la computadora entienda (lenguaje máquina
+con código binario).
+Al usar un lenguaje compilado (como lo son los lenguajes del popular Visual Studio
+de Microsoft), el programa desarrollado nunca se ejecuta mientras haya errores,
+sino hasta que luego de haber compilado el programa, ya no aparecen errores en el
+código.
+Intérprete
+Los intérpretes son programas que, a diferencia de un compilador, no
+leen todo el código primero como un todo, sino que leen cada línea del
+programa fuente por separado y la ejecutan directamente en la
+plataforma sin traducir primero el código.
+Algunos ejemplos de lenguajes de programación interpretados son Python,
+PHP, Ruby, JavaScript.
+
+PORTABILIDAD: Algunos lenguajes de programación son más
+portátiles que otros, lo que significa que el código escrito en un
+sistema puede ejecutarse en diferentes plataformas sin
+modificaciones significativas
+
+PARADIGMAS DE PROGRAMACIÓN: Los lenguajes de programación
+pueden seguir diferentes paradigmas, como la programación orientada a
+objetos y la programación estructurada. Cada paradigma proporciona
+una manera específica de organizar y estructurar el código.
+
+Programación Estructurada
+La programación estructurada se basa en tres principios fundamentales:
+1.Secuencialidad: El código se ejecuta en secuencia, de arriba a abajo. Las
+instrucciones se ejecutan una tras otra, y el flujo de control sigue una línea
+lógica.
+2.Selección (o toma de decisiones): Se utilizan estructuras de control de
+selección, como las sentencias "if" y "switch", para tomar decisiones basadas
+en condiciones lógicas. Esto permite que el programa tome diferentes
+caminos de ejecución según ciertas condiciones.
+3.Iteración (o bucles): Se utilizan estructuras de control de iteración, como las
+sentencias "for" y "while", para repetir un conjunto de instrucciones múltiples
+veces. Esto facilita la ejecución de tareas repetitivas sin tener que repetir el
+código.
+
+Programación Orientada a Objetos
+• La programación orientada a objetos (OOP) es un paradigma
+de programación que se basa en el concepto de "objetos".
+• En lugar de centrarse en funciones y lógica de programación,
+la OOP organiza el código en entidades autónomas llamadas
+objetos, que encapsulan datos y comportamientos.
+• Estos objetos interactúan entre sí mediante mensajes,
+permitiendo la creación de software más modular, flexible y
+fácil de entender.
+Lenguajes de programación como Java, C++, Python y C# son
+ejemplos comunes que admiten la programación orientada a
+objetos.
+
+BIBLIOTECAS Y MARCOS: Muchos lenguajes de programación
+tienen bibliotecas y marcos que ofrecen conjuntos predefinidos
+de funciones y herramientas para facilitar el desarrollo de
+software.
+ECOSISTEMA DE DESARROLLO: Cada lenguaje de programación
+tiene su propio conjunto de herramientas, entornos de desarrollo
+integrados (IDE) y comunidades de desarrollo que respaldan la
+creación y el mantenimiento de software.
+
+Sintaxis y Semántica
+La SINTAXIS de un lenguaje son las reglas específicas para
+estructurar y organizar las instrucciones, es decir como se pueden
+poner juntos símbolos, palabras reservadas, e identificadores
+para hacer un programa válido.
+La SEMÁNTICA define el significado de las instrucciones.
+Un programa sintácticamente correcto no implica que sea lógicamente
+(semánticamente) correcto.
+
+Pasos para realizar la resolución de problema usando un Lenguaje
+de Programación
+Pasos Etapa Descripción
+1 Análisis del problema 
+Conducen al diseño detallado por medio un
+código escrito en forma de un algoritmo.
+2 Especificación del
+Problema
+Definición precisa del problema.
+3 Diseño de algoritmo 
+Elegir una solución y escribir el algoritmo.
+4 Codificación 
+Se implementa el algoritmo en un código escrito
+en un lenguaje de programación. Refleja las
+ideas desarrolladas en las etapas de análisis y
+diseño
+5 Compilación y ejecución 
+Traduce el programa fuente a programa en
+código de
+maquina y lo ejecuta.
+6 Verificación 
+Verificar que el programa cumple con la
+especificación.
+
+Características deseables de un programa
+Cuando se codifica una aplicación software, existe un número
+potencialmente infinito de programas que satisfacen los mismos
+requisitos.
+Sin embargo, no todos estos programas comparten los mismos
+atributos de calidad.
+Es decir, no todos son iguales de eficientes tanto en consumo de
+procesador como de memoria; no todos son igual de legibles; no
+todos son igual de fáciles de modificar; no todos son igual de
+fáciles de probar y verificar que funcionan correctamente, etc.
+
+Buenas prácticas deseables de un programa
+No es solamente importante crear aplicaciones
+software que funcionen correctamente, sino que
+además debe crear aplicaciones software
+robustas, eficientes y fáciles de mantener.
+
+Características Deseables de un programa
+• Integridad
+• Claridad
+• Eficiencia
+• Modularidad
+• Generalidad
+
+Características Deseables de un programa
+Integridad:
+Se refiere a la corrección de los cálculos ya que la integridad de los cálculos es
+absolutamente necesaria en cualquier programa de computadora.
+Claridad:
+Hace referencia a la facilidad de lectura del programa en conjunto, con particular
+énfasis en la lógica subyacente. Si un programa está escrito de forma clara, será
+posible
+• para otro programador seguirla lógica del programa sin mucho esfuerzo.
+• para al autor original seguir su propio programa después de haberlo dejado
+durante un periodo de tiempo.
+
+Características Deseables de un programa
+Eficiencia:
+Está relacionada con la velocidad de ejecución y la utilización eficiente de
+la memoria. Éste es uno de los objetivos importantes, aunque no se debe
+conseguir a expensas de la pérdida de la claridad o la sencillez.
+Modularidad:
+Muchos programas se pueden dividir en pequeñas subtareas. , es decir
+implementar cada una de estas subtareas como un módulo separado del
+programa. En C estos módulos son las funciones. Permite aumenta la corrección
+y claridad de éstos y facilita los posibles cambios futuros del programa.
+
+Características Deseables de un programa
+Generalidad:
+Normalmente es deseable que un programa sea lo más general posible, dentro de
+unos límites razonables. Por ejemplo, podemos hacer un programa que lea los
+valores de ciertos parámetros en lugar de dejarlos fijos. Como norma general se
+puede conseguir con muy poco esfuerzo adicional un nivel considerable de
+generalidad.
+
+Buenas Prácticas de Programación
+ Escribir los programas lo más simple y directo posible.
+ Todo programa debe ser previamente comentado, explicando el propósito,
+funcionamiento completo y el resultado esperado.
+ Dentro de las funciones definidas, establece un comentario, que resalte la
+estructura funcional de la aplicación y facilite la lectura al programador al
+que le corresponda analizar el código.
+ Usar un nivel de sangría (indentación) por cada bloque de código (sentencias
+condicionales y bucles son consideradas como bloques de código embebido
+dentro de otro, por lo que se recomienda la misma, ésta indentación
+corresponde a una sangría que comúnmente tiene el valor de una
+tabulación (tecla Tab) o bien tres o cuatro espacios.
+
+Buenas Prácticas de Programación
+ Es importante que el tamaño de las sangrías sean regulares (consistentes) y
+no varíen a lo largo del código.
+ Se recomienda declarar variables en líneas separadas, ya que se facilita la
+descripción de cada variable mediante comentarios.
+• No usar variables cuyo nombre no posea algún significado descriptivo, una
+variable con nombres significativos permite al lector entender el contexto
+del código y permite disminuir la cantidad de documentación asociada.
+• Evitar el código commented-out, que corresponde al código comentado para
+que no se ejecute/no compile, ya que la lectura del código se vuelve
+engorrosa.
+
+Buenas Prácticas de Programación
+ En caso de usar operadores binarios (por ejemplo +, -, &&, ||, entre otros)
+se recomienda poner espacio a los extremos de cada operador, de modo
+que se resalte su presencia y se facilite la lectura del código.
+ Evitar la incorporación de más de una instrucción por línea.
+ Cuando se escribe operaciones que hagan uso de muchos operadores,
+procura revisar que las operaciones se estén realizando en el orden que se
+espera que se realicen.
+ Nunca olvidar inicializar los contadores y sumadores.
