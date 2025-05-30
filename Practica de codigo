@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char c1[100], c2[100];
+    
+    printf("Ingrese la primera cadena (C1): ");
+    fgets(c1, sizeof(c1), stdin);
+    c1[strcspn(c1, "\n")] = '\0'; // Eliminar salto de línea
+    
+    printf("Ingrese la segunda cadena (C2): ");
+    fgets(c2, sizeof(c2), stdin);
+    c2[strcspn(c2, "\n")] = '\0'; // Eliminar salto de línea
+    
+    printf("\nLongitud C1: %lu", strlen(c1));
+    printf("\nLongitud C2: %lu\n", strlen(c2));
+    
+    if(strlen(c1) > strlen(c2)) {
+        printf("\nC1 es más larga que C2");
+        strcat(c1, c2);
+        printf("\nCadena resultante: %s\n", c1);
+    } else if(strlen(c2) > strlen(c1)) {
+        printf("\nC2 es más larga que C1");
+        strcat(c2, c1);
+        printf("\nCadena resultante: %s\n", c2);
+    } else {
+        printf("\nAmbas cadenas tienen la misma longitud");
+        strcat(c1, c2);
+        printf("\nCadena resultante: %s\n", c1);
+    }
+    
+    return 0;
+}
